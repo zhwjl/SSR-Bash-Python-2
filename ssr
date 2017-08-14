@@ -34,22 +34,26 @@ while :; do echo
 	fi
 done
 
-if [[ $choice == 1 ]];then
+case $choice in
+
+1)
 	bash /usr/local/SSR-Bash-Python/server.sh
-fi
-
-if [[ $choice == 2 ]];then
+;;
+	
+2)
 	bash /usr/local/SSR-Bash-Python/user.sh
-fi
+;;
 
-if [[ $choice == 3 ]];then
+3)
 	bash /usr/local/SSR-Bash-Python/traffic.sh
-fi
+;;
 
-if [[ $choice == 4 ]];then
+4)
 	bash /usr/local/SSR-Bash-Python/dev.sh
-fi
+;;
 
-if [[ $choice == 5 ]];then
+5)
 	bash /usr/local/SSR-Bash-Python/self-check.sh
-fi
+;;
+
+esac
